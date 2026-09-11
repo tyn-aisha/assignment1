@@ -1,0 +1,219 @@
+/* Reset */
+body, h1, h2, h3, ul, ol, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin: 15px 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: #333;
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    background-color: #4CAF50;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Lists */
+ul, ol {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Blockquote */
+blockquote {
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #4CAF50;
+    background-color: #eeeeee;
+    font-style: italic;
+}
+
+/* External links */
+a {
+    color: #2E7D32;
+}
+
+a:hover {
+    color: #1B5E20;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Form */
+form {
+    margin: 20px 0;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Focus */
+input:focus,
+textarea:focus {
+    outline: 2px solid #4CAF50;
+    border-color: #4CAF50;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #388E3C;
+}
+
+/* ID selector required by the assignment */
+#message {
+    min-height: 120px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
