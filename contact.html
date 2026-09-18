@@ -1,135 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Kazakh Horse Culture</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership &amp; Contact — Girl's Girl</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Kazakh Horse Culture</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <h2>Contact Us</h2>
-        
-        <table>
-            <caption>Contact Information</caption>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">girl's <em>girl</em></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Membership</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h1>Membership plans</h1>
+        <p>Every plan includes a free first tour and access to the studio's booking app. Prices are shown per month unless noted.</p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Girl's Girl monthly membership plans</caption>
             <thead>
-                <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Message</th>
-                </tr>
+              <tr>
+                <th scope="col">Plan</th>
+                <th scope="col">Monthly price</th>
+                <th scope="col">Classes per week</th>
+                <th scope="col">Perks</th>
+              </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>john@example.com</td>
-                    <td>(123) 456-7890</td>
-                    <td>Interested in horse riding lessons.</td>
-                </tr>
-                <tr>
-                    <td>Jane Smith</td>
-                    <td>jane@example.com</td>
-                    <td>(234) 567-8901</td>
-                    <td>Inquiry about horse breeds.</td>
-                </tr>
-                <tr>
-                    <td>Ali Khan</td>
-                    <td>ali@example.com</td>
-                    <td>(345) 678-9012</td>
-                    <td>Looking for cultural events.</td>
-                </tr>
-                <tr>
-                    <td>Fatima Ali</td>
-                    <td>fatima@example.com</td>
-                    <td>(456) 789-0123</td>
-                    <td>Request for a brochure.</td>
-                </tr>
-                <tr>
-                    <td>Omar Faruk</td>
-                    <td>omar@example.com</td>
-                    <td>(567) 890-1234</td>
-                    <td>Feedback on the website.</td>
-                </tr>
+              <tr>
+                <th scope="row">Day Pass</th>
+                <td>$12</td>
+                <td>1 class</td>
+                <td>Studio tour included</td>
+              </tr>
+              <tr>
+                <th scope="row">Basic</th>
+                <td>$45</td>
+                <td>2 classes</td>
+                <td>Locker access</td>
+              </tr>
+              <tr>
+                <th scope="row">Plus</th>
+                <td>$65</td>
+                <td>Unlimited</td>
+                <td rowspan="2">Free towel service</td>
+              </tr>
+              <tr id="elite-row">
+                <th scope="row">Elite</th>
+                <td>$95</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <th scope="row">Founding Member</th>
+                <td>$650 / year</td>
+                <td>Unlimited</td>
+                <td>One private coaching session per month</td>
+              </tr>
             </tbody>
             <tfoot>
-                <tr>
-                    <td colspan="4">For more information, please reach out to us.</td>
-                </tr>
+              <tr>
+                <td colspan="3">All prices include studio insurance and equipment use</td>
+                <td>Updated January 2026</td>
+              </tr>
             </tfoot>
-        </table>
+          </table>
+        </div>
+
+        <p>Explanation of the CSS units used across this site: <strong>rem</strong> sizes type relative to the page's root size, so text scales evenly if a visitor changes their browser's default; <strong>%</strong> keeps layout widths (like the table wrapper) fluid on any screen; <strong>px</strong> is used for hairline borders where a fixed one-pixel line matters; <strong>vh</strong> shapes the hero on tall screens without letting it grow past the visible viewport; <strong>em</strong> sets spacing inside buttons and badges relative to their own text size.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <h2>Book a free trial class</h2>
         <form action="#" method="post">
+          <fieldset>
+            <legend>Your details</legend>
 
-    <fieldset>
+            <div class="field">
+              <label for="full-name">Full name</label>
+              <input type="text" id="full-name" name="full-name" placeholder="e.g. Aisha Kaliyeva" required>
+            </div>
 
-        <legend>Contact Form</legend>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
 
-        <label for="name">Name:</label>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 700 000 0000" pattern="[0-9+\s]{7,15}">
+            </div>
 
-        <input type="text" id="name" name="name" required>
+            <div class="field">
+              <label for="trial-date">Preferred trial date</label>
+              <input type="date" id="trial-date" name="trial-date" min="2026-09-18">
+            </div>
 
-        <label for="email">Email:</label>
+            <div class="field">
+              <label for="class-interest">Class you'd like to try</label>
+              <select id="class-interest" name="class-interest">
+                <option value="strength">Strength Circuit</option>
+                <option value="pilates">Reformer Pilates</option>
+                <option value="boxing">Boxing Flow</option>
+                <option value="mobility">Mobility &amp; Recovery</option>
+              </select>
+            </div>
 
-        <input type="email" id="email" name="email" required>
+            <div class="field">
+              <span>Preferred session time</span>
+              <div class="radio-group">
+                <label><input type="radio" name="session-time" value="morning" checked> Morning</label>
+                <label><input type="radio" name="session-time" value="evening"> Evening</label>
+              </div>
+            </div>
 
-        <label for="phone">Phone:</label>
+            <div class="field">
+              <label for="kit-color">Welcome-kit shirt color</label>
+              <input type="color" id="kit-color" name="kit-color" value="#d6284f">
+            </div>
 
-        <input type="tel" id="phone" name="phone">
+            <div class="field">
+              <label for="goal">Your main fitness goal</label>
+              <textarea id="goal" name="goal" rows="4" maxlength="300" placeholder="Tell your future coach what you're working toward"></textarea>
+            </div>
 
-        <label for="age">Age:</label>
+            <div class="field">
+              <label><input type="checkbox" name="waiver" required> I agree to the studio's safety waiver</label>
+              <label><input type="checkbox" name="newsletter"> Send me the studio newsletter</label>
+            </div>
 
-        <input type="number" id="age" name="age" min="10" max="100">
+            <button type="submit" class="btn">Request my trial class</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
 
-        <label for="visit-date">Preferred Visit Date:</label>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Girl's Girl Studio, Astana, Kazakhstan.</p>
+      <p><a href="about.html">Read about the studio</a></p>
+    </div>
+  </footer>
 
-        <input type="date" id="visit-date" name="visit-date">
-
-        <label for="message">Message:</label>
-
-        <textarea id="message" name="message"></textarea>
-
-        <fieldset>
-
-            <legend>Preferred Contact Method:</legend>
-
-            <label>
-
-                <input type="radio" name="contact-method" value="email" required>
-
-                Email
-
-            </label>
-
-            <label>
-
-                <input type="radio" name="contact-method" value="phone">
-
-                Phone
-
-            </label>
-
-        </fieldset>
-
-        <input type="submit" value="Submit">
-
-    </fieldset>
-
-</form>
-    </main>
-
-    <footer>
-       <p>&copy; 2026 Kazakh Horse Culture. All rights reserved.</p>
-    </footer>
 </body>
 </html>
